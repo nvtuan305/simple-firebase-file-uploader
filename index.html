@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Uploader</title>
+    <script type="text/javascript" src="src.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+</head>
+
+<body>
+    <p><strong>Select one file to upload</strong></p>
+    <input type="file" id="input-select-file" size="100" onchange="selectFile()">
+    <p id="file-info">Select one file to upload.</p>
+    <button type="button" onclick="upload()">Upload File</button>
+    <p><a href="#" id="result"></a></p>
+
+    <script>
+        var config = {
+            apiKey: "AIzaSyBmUQoWEzA--YzF_jxfLhsaWC_0Wm9SSPY",
+            authDomain: "gianty-demo.firebaseapp.com",
+            databaseURL: "https://gianty-demo.firebaseio.com",
+            storageBucket: "gianty-demo.appspot.com"
+        };
+        firebase.initializeApp(config);
+    </script>
+</body>
+</html>
